@@ -10,8 +10,8 @@
    <p>Get it done today</p>
 
    <!-- add HTML code here -->
-   <input type="text" name="input" id="input">
-   <button type="button" onclick="addItem()">Enter</button>
+   <input type="text" name="input" id="userinput">
+   <button type="button" id="enter" onclick="addItem()">Enter</button>
 
 
    <ul>
@@ -29,7 +29,7 @@
       function addItem() {
          var ul = document.getElementsByTagName('ul')[0];
          var li = document.createElement('li');
-         var input = document.getElementById('input');
+         var input = document.getElementById('userinput');
 
          if (input.value.length > 0 ) {
             var textNode = document.createTextNode(input.value);
